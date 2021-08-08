@@ -248,7 +248,8 @@
   color: gray;
 }
 /*Media Queries ////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-@media screen and ( min-width: 768px  ) {
+
+@media screen and ( min-width: 1200px  ) {
   .header {
     margin: 0% 10% auto;
     height: 500px;
