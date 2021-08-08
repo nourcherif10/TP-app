@@ -1,0 +1,217 @@
+<!--Header /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="header">
+  <div class="header-img">
+    <a href=""
+      ><img
+        src="https://media.adeo.com/media/1566611/format/jpeg?width=1216&crop=5:2,smart"
+        alt=""
+        style="width:100%;"
+    /></a>
+  </div>
+  <div class="header-card">
+    <h2 class="card-titre">Déco, le petit qui change tout !</h2>
+    <a class="header-link" href="">Voir les produits </a>
+  </div>
+</div>
+<!--Quick-Nav //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="quick-nav">
+  <div class="quick-nav-1-line">
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans le salon
+      </button></a
+    >
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans le salon
+      </button></a
+    >
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans le salon
+      </button></a
+    >
+  </div>
+  <div class="quick-nav-2-line">
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans
+      </button></a
+    >
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans
+      </button></a
+    >
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans
+      </button></a
+    >
+  </div>
+  <div class="quick-nav-3-line">
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans
+      </button></a
+    >
+    <a href=""
+      ><button type="button" class="quick-nav-button">
+        Un coup de frais dans
+      </button></a
+    >
+  </div>
+</div>
+<!--Carousel ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+<!--Services ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="services">
+  <div class="column1">
+    <div class="titre"><p>LES SERVICES LEROY MERLIN</p></div>
+    <div class="p1">
+      <p>Nos services pour réaliser votre projet déco en toute sérenité</p>
+    </div>
+    <div class="p2">
+      <p><a href="">Voir plus de services</a></p>
+    </div>
+  </div>
+
+  <div class="photos1">
+    <div class="single-photo" *ngFor="let item of tab">
+      <a href=""
+        ><img src="{{ item.image }}" alt="{{ item.alt }}" class="single-photo"
+      /></a>
+    </div>
+  </div>
+</div>
+<!--Les inspirations/////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="inspirations">
+  <h4>Les meilleures inspirations pour votre projet déco</h4>
+  <div class="center">
+    <div class="single-card1" *ngFor="let item of articles">
+      <div class="cardi" style="width: 18rem">
+        <a href="">
+          <img
+            src="{{ item.image }}"
+            class="card-img1"
+            alt="{{ item.titre }}"
+          />
+          <div class="card-body1">
+            <h5 style="color: black">{{ item.titre }}</h5>
+            <p style="text-align: left; color: gray">
+              {{ item.description }}
+            </p>
+            <a href="#" style="color: black">En savoir plus</a>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Les cours ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="cours">
+  <div class="column2">
+    <div class="titre2"><p>LEROY MERLIN CAMPUS</p></div>
+    <div class="p3">
+      <p>Tous les conseils, cours et vidéos pour réussir votre projet déco</p>
+    </div>
+    <div class="p4">
+      <p><a href="">Voir plus de cours</a></p>
+    </div>
+  </div>
+
+  <div class="photos2">
+    <div
+      class="single-cours"
+      *ngFor="let item of list"
+      style="margin: 2%; width: 15rem"
+    >
+      <!--relative width-->
+      <a href="#" style="text-decoration: none"
+        ><div class="card" style="border-style: none">
+          <img src="{{ item.image }}" class="card-img-top" alt="..." />
+          <ul
+            class="list-group list-group-flush"
+            style="border-style: none; text-align: center"
+          >
+            <li
+              class="list-group-item"
+              style="border-style: none; font-weight: bold; color: #035f64"
+            >
+              Cours en ligne
+            </li>
+            <li class="list-group-item" style="border-style: none">
+              {{ item.description }}
+            </li>
+          </ul>
+          <div
+            class="card-body"
+            style="
+              border-style: none;
+              text-align: center;
+              text-decoration: none;
+            "
+          >
+            <a
+              href="#"
+              class="card-link"
+              style="color: #000; text-decoration: underline"
+              >Voir le cours</a
+            >
+          </div>
+        </div></a
+      >
+    </div>
+  </div>
+</div>
+<!--Prouduits Bricolage/////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<div class="titre3">
+  <h1>Découvrez nos produits bricolage, jardin & déco</h1>
+</div>
+<div class="TableBr">
+  <div class="colBr">
+    <h5>Aménager l'extérieur</h5>
+    <ul>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+    </ul>
+  </div>
+  <div class="colBr">
+    <h5>Le jardin en été</h5>
+    <ul>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+    </ul>
+  </div>
+  <div class="colBr">
+    <h5>Décorer votre habitat</h5>
+    <ul>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+    </ul>
+  </div>
+  <div class="colBr" style="border: none">
+    <h5>Accès rapide</h5>
+    <ul>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+      <li><a href="">Barbecue</a></li>
+    </ul>
+  </div>
+</div>
+<!--Carousel /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
